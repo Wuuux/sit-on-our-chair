@@ -28,10 +28,9 @@ body {
   .slider {
     width : 100%;
     height : 505px;
-    // background-color: $mainPageFirstColor;
     box-shadow: inset 0px -123px 144px -112px rgba(208,207,215,1);
-      position: relative;
-    // background: linear-gradient(#ffffff, #d0cfd7);
+    position: relative;
+
     img {
         position: absolute;
       	width : 546px;
@@ -154,6 +153,75 @@ body {
       font-family: 'Raleway', arial,sans-serif;
       font-size: 52px;
       color: $pageSpecialColorGreen;
+    }
+  }
+
+
+  .gallery {
+    width : 100%;
+    height : 350px;
+    position: relative;
+    .galleryItem {
+      position: absolute;
+      width : 338px;
+      height: 300px;
+      margin-top: 27px;
+      .nameItemBackground {
+        position: absolute;
+        width : 100%;
+        height: 63px;
+        margin-top: 155px;
+        background: rgba(255,255,255,0.4);
+        padding-top: 13px;
+        .nameItem {
+          font-size: 14px;
+          font-weight: bolder;
+          margin-left: 20px;
+
+        }
+        .nameBar {
+          width : 145px;
+          height : 7px;
+          background: $pageSpecialColorGreen;
+          margin-left : 12px;
+        }
+      }
+    }
+    #item01 {
+      background-image: url('../images/box1_img.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    #item02 {
+      background-image: url('../images/box2_img.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 363px;
+    }
+    .descriptionItem {
+      position: absolute;
+      width : 338px;
+      height: 270px;
+      border: 1px solid $mainPageSecondColor;
+      margin-top: 27px;
+      margin-left: $containerWidth - 338px;
+      padding : 30px 20px 20px;
+      .nameItem {
+        font-size: 14px;
+        font-weight: bolder;
+      }
+      .nameBar {
+        width : 145px;
+        height : 7px;
+        background: $pageSpecialColorGreen;
+      }
+      p {
+        padding-top: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 1px;
+
+      }
     }
 
   }
