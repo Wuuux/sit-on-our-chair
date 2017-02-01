@@ -230,26 +230,28 @@ body {
 
   }
 
+  .sectionName {
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  .nameSectionBar {
+    margin-top: 5px;
+    width : $itemWidth - 7px;
+    height : 7px;
+    background: $pageSpecialColorGreen;
+  }
+
   .priceList {
     width : 100%;
     height : 725px;
     position: relative;
     // border : 1px solid black;
 
-    .sectionName {
-      font-weight: bold;
-      padding-top: 30px;
-    }
-    .nameSectionBar {
-      margin-top: 5px;
-      width : $itemWidth - 7px;
-      height : 7px;
-      background: $pageSpecialColorGreen;
-    }
+
     .planItem {
       position: absolute;
       width : $itemWidth;
-      height: 552px;
+      height: 475px;
       border: 2px solid $priceListBorderColor;
       background: $priceListItemBackgroundColor;
       margin-top: 46px;
@@ -328,6 +330,15 @@ body {
           background: pink;
         }
       }
+      .planButton {
+        width : 130px;
+        height : 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 24px auto;
+      }
     }
     #basicPlan {
       margin-left: 0px ;
@@ -336,6 +347,30 @@ body {
       }
       .planPrice {
         color : #c6c6c6;
+      }
+      .planInfo {
+
+        div:nth-child(1) {
+          background: #e4e4e4;
+          color : #939393;
+          font-weight: lighter;
+        }
+        div:nth-child(2) {
+          background: #f1f1f1;
+          color : #737373;
+          font-weight: lighter;
+
+        }
+        div:nth-child(3) {
+          background: inherit;
+        }
+        div:nth-child(4) {
+          background: inherit;
+        }
+      }
+      .planButton {
+        background: $pageSpecialColorGreen;
+        color : white;
       }
     }
     #standardPlan {
@@ -357,6 +392,30 @@ body {
       .planPrice {
         color : $pageSpecialColorGreen;
       }
+      .planInfo {
+        div:nth-child(1) {
+          background: #fff;
+          color : #737373;
+          font-weight: lighter;
+        }
+        div:nth-child(2) {
+          background: #f1f1f1;
+          color : #737373;
+          font-weight: lighter;
+        }
+        div:nth-child(3) {
+          background: #fff;
+          color : #737373;
+          font-weight: lighter;
+        }
+        div:nth-child(4) {
+          background: inherit;
+        }
+      }
+      .planButton {
+        background: white;
+        color : $pageSpecialColorGreen;
+      }
     }
     #advancedPlan {
       margin-left: 2*$itemWidth + 2*$gapWidth ;
@@ -366,10 +425,107 @@ body {
       .planPrice {
         color : #c6c6c6;
       }
+      .planInfo {
+        div:nth-child(1) {
+          background: #e4e4e4;
+          color : #939393;
+          font-weight: lighter;
+        }
+        div:nth-child(2) {
+          background: #f1f1f1;
+          color : #737373;
+          font-weight: lighter;
+        }
+        div:nth-child(3) {
+          background: #e4e4e4;
+          color : #939393;
+          font-weight: lighter;
+        }
+        div:nth-child(4) {
+          background: #f1f1f1;
+          color : #737373;
+          font-weight: lighter;
+        }
+      }
+      .planButton {
+        background: $pageSpecialColorGreen;
+        color : white;
+      }
     }
-
   }
 
+  .contactArea {
+    width : 100%;
+    height : 653px;
+    position: relative;
+    .name, .email, .message {
+      width : 650px;
+      height: 66px;
+      margin-top : 45px;
+      border: 1px solid #a3e2d7;
+      display: flex;
+      align-items: center;
+      padding-left: 16px;
+      font-size: 24px;
+      color : #cacaca;
+    }
+    .email {
+      margin-top : 26px;
+    }
+    .message {
+      margin-top : 26px;
+      height: 200px;
+      align-items: flex-start;
+      padding-top: 16px;
+    }
+    .contactPicture {
+      position: absolute;
+      margin-top: -415px;
+      margin-left: 730px;
+    }
+    .agreement {
+      position: absolute;
+      margin-top: -160px;
+      margin-left: 700px;
+      display: flex;
+      align-items: center;
+      // width : $itemWidth;
+      div:nth-child(1) {
+        width : 40px;
+        height : 40px;
+        border : 1px solid $pageSpecialColorGreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .agreementPicture {
+          width : 31px;
+          height: 27px;
+        }
+      }
+      div:nth-child(2) {
+        width : 300px;
+        font-size: 16px;
+        color : $kontaktColor;
+        padding-left: 16px;
+        letter-spacing: 1px;
+      }
+    }
+    .button {
+      position: absolute;
+      margin-top: -70px;
+      margin-left: 700px;
+      width : 343px;
+      height : 71px;
+      background: $pageSpecialColorGreen;
+      color : white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+  }
 
 
 }
