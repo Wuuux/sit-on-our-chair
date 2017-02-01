@@ -8,150 +8,173 @@
 
 </head>
 <body>
-  <!-- main page -->
-  <div class='mainPage'>
-    <div class='navBar'>
-    </div>
-    <div class='slider'>
-      <img src="../images/black_chair.png">
-      <div class='slideDescription'>
-          <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
-          <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet, consectetur consectetur adipiscing elit. ipsum dolor sit amet, consectetur Maecenas tincidunt, risus eu consequat posuere, magna purus congue ligula, sit amet luctus eros felis lobortis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-          <div class='button'>
-            ZOBACZ WIĘCEJ
+
+  <!-- navigation bar -->
+    <section class='mainPageNavbar'>
+      <div class='container'>
+        <div class='navBar'>
+          <div class='logo'>SIT<span>ON</span>CHAIR</div>
+          <ul>
+            <li>O FIRMIE</li>
+            <li>GALERIA</li>
+            <li>KONTAKT</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end of navigation bar -->
+
+    <!-- slider section -->
+    <section class='mainPageSlider'>
+      <div class='container'>
+          <div class='slider'>
+            <img src="../images/black_chair.png">
+            <div class='slideDescription'>
+                <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
+                <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet, consectetur consectetur adipiscing elit. ipsum dolor sit amet, consectetur Maecenas tincidunt, risus eu consequat posuere, magna purus congue ligula, sit amet luctus eros felis lobortis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <div class='button'>
+                  ZOBACZ WIĘCEJ
+                </div>
+            </div>
+            <span class='leftSliderButton'><</span>
+            <span class='rightSliderButton'>></span>
           </div>
       </div>
-    </div>
-    <div class='firstPartMainPage'>
-    </div>
-    <div class='secondPartMainPage'>
-    </div>
-    <div class='thirdPartMainPage'>
-    </div>
-  </div>
+    </section>
+    <!-- end of slider section -->
 
-  <div class='container'>
-    <div class='navBar'>
-      <div class='logo'>SIT<span>ON</span>CHAIR</div>
-      <ul>
-        <li>O FIRMIE</li>
-        <li>GALERIA</li>
-        <li>KONTAKT</li>
-      </ul>
-    </div>
-    <div class='slider'>
-      <span class='leftSliderButton'><</span>
-      <span class='rightSliderButton'>></span>
-    </div>
-    <div class='gallery'>
-      <div id='item01' class='galleryItem'>
-        <div class='nameItemBackground'>
-          <span class='nameItem'>Chair CLAIR</span>
-          <div class='nameBar'></div>
-        </div>
+    <!-- gallery section -->
+    <section class='mainPageGallery'>
+      <div class='container'>
+          <div class='gallery'>
+            <div id='item01' class='galleryItem'>
+              <div class='nameItemBackground'>
+                <span class='nameItem'>Chair CLAIR</span>
+                <div class='nameBar'></div>
+              </div>
+            </div>
+            <div id='item02' class='galleryItem'>
+              <div class='nameItemBackground'>
+                <span class='nameItem'>Chair MARGARITA</span>
+                <div class='nameBar'></div>
+              </div>
+            </div>
+            <div class='descriptionItem'>
+              <span class="nameItem">Finds all inputs</span>
+              <div class='nameBar'></div>
+              <p class='textItem'>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.<br><br>Notice there is no change when clicking the checkboxes since no click events have been</p>
+            </div>
+          </div>
       </div>
-      <div id='item02' class='galleryItem'>
-        <div class='nameItemBackground'>
-          <span class='nameItem'>Chair MARGARITA</span>
-          <div class='nameBar'></div>
-        </div>
+    </section>
+    <!-- end of gallery section -->
+
+    <!-- price list section -->
+    <section class='mainPagePriceList'>
+      <div class='container'>
+            <div class='priceList'>
+              <div class='sectionName'>
+                <span>CENNIK</span>
+                <div class='nameSectionBar'></div>
+              </div>
+              <div id='basicPlan' class='planItem'>
+                <div class='decoration'>
+                  <div></div>
+                </div>
+                <div class='planName'>BASIC PLAN</div>
+                <div class='planPrice'>
+                  <div class='planPriceMoneyCount'>85</div>
+                  <div class='planPriceMoneyChange'>99</div>
+                  <div class='planPriceMoneyName'>pln/msc</div>
+                </div>
+                <div class='planInfo'>
+                  <div>Zakup towaru + dowóz</div>
+                  <div>Serwis</div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class='planButton'>DOŁĄCZ</div>
+              </div>
+              <div id='standardPlan' class='planItem'>
+                <div class='decoration'>
+                  <div></div>
+                </div>
+                <div class='planName'>STANDARD PLAN</div>
+                <div class='planPrice'>
+                  <div class='planPriceMoneyCount'>95</div>
+                  <div class='planPriceMoneyChange'>99</div>
+                  <div class='planPriceMoneyName'>pln/msc</div>
+                </div>
+                <div class='planInfo'>
+                  <div>Zakup towaru + dowóz</div>
+                  <div>Serwis</div>
+                  <div>Gwarancja 5 lat</div>
+                  <div></div>
+                </div>
+                <div class='planButton'>DOŁĄCZ</div>
+              </div>
+              <div id='advancedPlan' class='planItem'>
+                <div class='decoration'>
+                  <div></div>
+                </div>
+                <div class='planName'>ADVANCE PLAN</div>
+                <div class='planPrice'>
+                  <div class='planPriceMoneyCount'>211</div>
+                  <div class='planPriceMoneyChange'>99</div>
+                  <div class='planPriceMoneyName'>pln/msc</div>
+                </div>
+                <div class='planInfo'>
+                  <div>Zakup towaru + dowóz</div>
+                  <div>Serwis</div>
+                  <div>Gwarancja 6 lat</div>
+                  <div>Porady projektanta</div>
+                </div>
+                <div class='planButton'>DOŁĄCZ</div>
+              </div>
+            </div>
       </div>
-      <div class='descriptionItem'>
-        <span class="nameItem">Finds all inputs</span>
-        <div class='nameBar'></div>
-        <p class='textItem'>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.<br><br>Notice there is no change when clicking the checkboxes since no click events have been</p>
-      </div>
-    </div>
-    <div class='priceList'>
-      <div class='sectionName'>
-        <span>CENNIK</span>
-        <div class='nameSectionBar'></div>
-      </div>
-      <div id='basicPlan' class='planItem'>
-        <div class='decoration'>
-          <div></div>
-        </div>
-        <div class='planName'>BASIC PLAN</div>
-        <div class='planPrice'>
-          <div class='planPriceMoneyCount'>85</div>
-          <div class='planPriceMoneyChange'>99</div>
-          <div class='planPriceMoneyName'>pln/msc</div>
-        </div>
-        <div class='planInfo'>
-          <div>Zakup towaru + dowóz</div>
-          <div>Serwis</div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class='planButton'>DOŁĄCZ</div>
-      </div>
-      <div id='standardPlan' class='planItem'>
-        <div class='decoration'>
-          <div></div>
-        </div>
-        <div class='planName'>STANDARD PLAN</div>
-        <div class='planPrice'>
-          <div class='planPriceMoneyCount'>95</div>
-          <div class='planPriceMoneyChange'>99</div>
-          <div class='planPriceMoneyName'>pln/msc</div>
-        </div>
-        <div class='planInfo'>
-          <div>Zakup towaru + dowóz</div>
-          <div>Serwis</div>
-          <div>Gwarancja 5 lat</div>
-          <div></div>
-        </div>
-        <div class='planButton'>DOŁĄCZ</div>
-      </div>
-      <div id='advancedPlan' class='planItem'>
-        <div class='decoration'>
-          <div></div>
-        </div>
-        <div class='planName'>ADVANCE PLAN</div>
-        <div class='planPrice'>
-          <div class='planPriceMoneyCount'>211</div>
-          <div class='planPriceMoneyChange'>99</div>
-          <div class='planPriceMoneyName'>pln/msc</div>
-        </div>
-        <div class='planInfo'>
-          <div>Zakup towaru + dowóz</div>
-          <div>Serwis</div>
-          <div>Gwarancja 6 lat</div>
-          <div>Porady projektanta</div>
-        </div>
-        <div class='planButton'>DOŁĄCZ</div>
-      </div>
-    </div>
-    <div class='contactArea'>
-      <div class='sectionName'>
-        <span>KONTAKT</span>
-        <div class='nameSectionBar'></div>
-      </div>
-      <div class='name'>Imię</div>
-      <div class='email'>Email</div>
-      <div class='message'>Wiadomość</div>
-      <img src='images/red_chair.png' class='contactPicture'>
-      <div class='agreement'>
-        <div><img src='images/form_ok.jpg' class='agreementPicture'></div>
-        <div>Zgadzam się na przetwarzanie danych osobowych</div>
-      </div>
-      <div class='button'>WYŚLIJ</div>
-    </div>
-    <div class='footer'>
-      <div class='copywright'>Copywright 2014 | All Rights Reserved. - Sit On Chair</div>
-      <div class='socialIcons'>
-        <img src='images/flickr.png'>
-        <img src='images/vimeo.png'>
-        <img src='images/pinterest.png'>
-        <img src='images/twitter.png'>
-      </div>
-      <div class='logoText'>SIT<span>ON</span>CHAIR</div>
-    </div>
+    </section>
+    <!-- end of price list section -->
 
 
+    <!-- contact section -->
+    <section class='mainPageContact'>
+      <div class='container'>
+          <div class='contactArea'>
+            <div class='sectionName'>
+              <span>KONTAKT</span>
+              <div class='nameSectionBar'></div>
+            </div>
+            <div class='name'>Imię</div>
+            <div class='email'>Email</div>
+            <div class='message'>Wiadomość</div>
+            <img src='images/red_chair.png' class='contactPicture'>
+            <div class='agreement'>
+              <div><img src='images/form_ok.jpg' class='agreementPicture'></div>
+              <div>Zgadzam się na przetwarzanie danych osobowych</div>
+            </div>
+            <div class='button'>WYŚLIJ</div>
+          </div>
+      </div>
+    </section>
+    <!-- end of contact section -->
 
-
-  </div>
+    <!-- footer section -->
+    <section class='mainPageFooter'>
+      <div class='container'>
+        <div class='footer'>
+          <div class='copywright'>Copywright 2014 | All Rights Reserved. - Sit On Chair</div>
+          <div class='socialIcons'>
+            <img src='images/flickr.png'>
+            <img src='images/vimeo.png'>
+            <img src='images/pinterest.png'>
+            <img src='images/twitter.png'>
+          </div>
+          <div class='logoText'>SIT<span>ON</span>CHAIR</div>
+        </div>
+      </div>
+    </section>
+    <!-- end of footer section -->
 
 </body>
 </html>
