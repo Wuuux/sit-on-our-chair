@@ -456,7 +456,7 @@ body {
 
   .contactArea {
     width : 100%;
-    height : 653px;
+    height : 570px;
     position: relative;
     .name, .email, .message {
       width : 650px;
@@ -526,6 +526,35 @@ body {
       border-radius: 10px;
     }
   }
+  .footer {
+    position: relative;
+    width: 100%;
+    height : 83px;
 
+    .copywright {
+      position: absolute;
+      color : #e4e4e4;
+      font-size: 11px;
+      padding-top: 22px;
+
+    }
+    .socialIcons {
+      position: absolute;
+      margin-left: 820px;
+
+    }
+    .logoText {
+      position: absolute;
+      color : #9b9b9b;
+      font-size: 14px;
+      margin-left: 1040px;
+      margin-top: 16px;
+      span {
+        font-weight: bold;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+  }
 
 }
