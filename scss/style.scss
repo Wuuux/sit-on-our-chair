@@ -5,6 +5,10 @@ $kontaktColor          : #575757;
 $mainPageFirstColor    : #fff;
 $mainPageSecondColor   : #f1f1f1;
 $containerWidth        : 1064px;
+$itemWidth             : 338px;
+$priceListBorderColor  : #c1c1c1;
+$priceListItemBackgroundColor : #f9f9f9;
+$gapWidth              : 24px;
 
 
 * {
@@ -225,5 +229,147 @@ body {
     }
 
   }
+
+  .priceList {
+    width : 100%;
+    height : 725px;
+    position: relative;
+    // border : 1px solid black;
+
+    .sectionName {
+      font-weight: bold;
+      padding-top: 30px;
+    }
+    .nameSectionBar {
+      margin-top: 5px;
+      width : $itemWidth - 7px;
+      height : 7px;
+      background: $pageSpecialColorGreen;
+    }
+    .planItem {
+      position: absolute;
+      width : $itemWidth;
+      height: 552px;
+      border: 2px solid $priceListBorderColor;
+      background: $priceListItemBackgroundColor;
+      margin-top: 46px;
+
+
+      .decoration {
+        position: absolute;
+        width : 56px;
+        height : 56px;
+        border : 2px solid $priceListBorderColor;
+        border-radius: 100%;
+        margin-top: -35px;
+        margin-left: ($itemWidth - 56px)/2 ;
+        background: white;
+        div {
+          position: absolute;
+          width : 28px;
+          height: 28px;
+          border-radius: 100%;
+          background: $priceListBorderColor;
+          margin-top: 12px;
+          margin-left: 12px;
+        }
+      }
+      .planName {
+        position: absolute;
+        width : 100%;
+        margin-top: 28px;
+        font-size: 18px;
+        text-align: center;
+      }
+      .planPrice {
+        position: absolute;
+        width : 100px;
+        height : 100px;
+        margin-top: 80px;
+        margin-left: ($itemWidth - 100px)/2 ;
+        border : 2px solid $priceListBorderColor;
+        border-radius: 100%;
+        background: white;
+        .planPriceMoneyCount {
+          position: absolute;
+          width : 63px;
+          margin-top: 23px;
+          text-align: right;
+          font-size: 30px;
+          font-weight: bold;
+        }
+        .planPriceMoneyChange {
+          position: absolute;
+          width : 40px;
+          margin-top: 24px;
+          margin-left: 62px;
+          text-align: left;
+          font-size: 10px;
+        }
+        .planPriceMoneyName {
+          position: absolute;
+          width : 100%;
+          margin-top: 62px;
+          font-size: 12px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+      .planInfo {
+        margin-top: 225px;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          width : 100%;
+      		height: 43px;
+      		font-weight: bold;
+          background: pink;
+        }
+      }
+    }
+    #basicPlan {
+      margin-left: 0px ;
+      .planName {
+        color : $pageSpecialColorGreen;
+      }
+      .planPrice {
+        color : #c6c6c6;
+      }
+    }
+    #standardPlan {
+      margin-left: $itemWidth + $gapWidth ;
+      &.planItem {
+        border-color: $pageSpecialColorGreen;
+        background: $pageSpecialColorGreen;
+        .decoration {
+          border-color: $pageSpecialColorGreen;
+          background: $pageSpecialColorGreen;
+          div {
+            background: white;
+          }
+        }
+      }
+      .planName {
+        color : white;
+      }
+      .planPrice {
+        color : $pageSpecialColorGreen;
+      }
+    }
+    #advancedPlan {
+      margin-left: 2*$itemWidth + 2*$gapWidth ;
+      .planName {
+        color : $pageSpecialColorGreen;
+      }
+      .planPrice {
+        color : #c6c6c6;
+      }
+    }
+
+  }
+
+
 
 }
