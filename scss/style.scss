@@ -34,6 +34,29 @@ section.mainPageSlider {
   margin      : 0 auto;
   box-shadow  : inset 0px -123px 144px -112px rgba(208,207,215,1);
   position    : relative;
+  overflow: hidden;
+  ul {
+    position: absolute;
+    width      : 3196px;
+    height      : 505px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    // border : 1px solid black;
+    top : 0;
+    // left : -2128px;
+    left : 0px;
+  }
+  li {
+    width      : 1064px;
+    height      : 505px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    // position: relative;
+    float: left;
+    // border : 1px solid black;
+  }
   img {
       position    : absolute;
       width       : 546px;
@@ -115,10 +138,11 @@ section.mainPageFooter {
 
 .container {
 	width      : 1064px;
-  height     : 2275px;
+  height     : auto;
   position   : relative;
   margin     : 0 auto;
   .navBar {
+    position : relative;
   	width           : 100%;
     height          : 40px;
     display         : flex;
@@ -148,47 +172,47 @@ section.mainPageFooter {
               text-decoration: none;
               color : inherit;
           }
+          ul {
+           visibility: hidden;
+           position: absolute;
+           top: 0;
+           left: -50px;
+             li {
+                display  : block;
+                width : 100px;
+                height : 30px;
+                display: flex;
+                align-items: center;
+                background: black;
+                padding-left: 6px;
+             }
+             li:hover {
+               background: pink;
+             }
+             li:nth-child(1) {
+                  background: rgba(0,0,0,0);
+                  height: auto;
+                  margin-top: 20px;
+                  div {
+                    width : 10px;
+                    height : 10px;
+                    margin-left: 20px;
+                    border: 5px solid rgba(0,0,0,0);
+                    border-bottom : 5px solid black;
+                  }
+                }
+          }
+      }
+      li:hover {
+        height: auto;
+        ul {
+          visibility: visible;
+        }
+        li:hover {
+          visibility: visible;
+        }
+      }
 
-      }
-      // li:hover {
-      //   height: auto;
-      //   ul {
-      //     visibility: visible;
-      //   }
-      //   ul:hover {
-      //     visibility: visible;
-      //   }
-      // }
-      ul {
-       visibility: hidden;
-       position: absolute;
-       top: 0;
-       left: -50px;
-         li {
-            display  : block;
-            width : 100px;
-            height : 30px;
-            display: flex;
-            align-items: center;
-            background: black;
-            padding-left: 6px;
-         }
-         li:hover {
-           background: pink;
-         }
-         li:nth-child(1) {
-              background: rgba(0,0,0,0);
-              height: auto;
-              margin-top: 20px;
-              div {
-                width : 10px;
-                height : 10px;
-                margin-left: 20px;
-                border: 5px solid rgba(0,0,0,0);
-                border-bottom : 5px solid black;
-              }
-            }
-      }
     }
   }
 }
@@ -599,3 +623,15 @@ section.mainPageFooter {
       }
     }
   }
+
+
+  // ul li:hover {
+  //   height: auto;
+  //   ul {
+  //     visibility: visible;
+  //     li:hover {
+  //       visibility: visible;
+  //     }
+  //   }
+  //
+  // }
