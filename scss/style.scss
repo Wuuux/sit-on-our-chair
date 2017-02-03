@@ -335,14 +335,14 @@ section.mainPageFooter {
         margin-top   : -35px;
         margin-left  : ($itemWidth - 56px)/2 ;
         background   : white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         div {
-          position   : absolute;
           width      : 28px;
           height     : 28px;
           border-radius: 100%;
           background : $priceListBorderColor;
-          margin-top : 12px;
-          margin-left: 12px;
         }
       }
       .planName {
