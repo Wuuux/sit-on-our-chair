@@ -183,8 +183,8 @@ $('.list_panel li').on('click',function(){
     return chairPrice + colorPrice + patternPrice + transportPrice;
   };
   
-  $('div.agreement div:first-child').on('click', function(){
-    $(this).toggle();
+  $('div.agreement').on('click', function(){
+    $(this).find('img').toggle();
   });
 
 });
