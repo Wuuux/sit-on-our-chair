@@ -262,7 +262,7 @@ section.mainPageFooter { width: 1200px; height: 83px; background: #fff; margin: 
 
 .title { height: 10px; padding-top: 6px; padding-left: 6px; }
  
-button, div.agreement, .planButton {cursor : pointer};
+button, div.agreement, .planButton, .button {cursor : pointer};
 
 
 
